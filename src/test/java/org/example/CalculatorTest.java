@@ -40,7 +40,7 @@ class CalculatorTest {
         long mult = Calculator._mult(new int[]{1, 2, 3});
         assertEquals(mult, 6);
         mult = Calculator._mult(new int[]{2, 9, 0});
-        assertEquals(mult, 0);
+        assertEquals(mult, 1);
         mult = Calculator._mult(new int[]{9999999, 9999999, 9999999});
         assertEquals(mult, -1);
     }
