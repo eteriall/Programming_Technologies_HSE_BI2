@@ -1,6 +1,6 @@
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
-
 # Programming_Technologies_HSE_BI_2
+![example workflow](https://github.com/eteriall/Programming_Technologies_HSE_BI_2/actions/workflows/gradle.yml/badge.svg)
+
 
 Домашнее задание по предмету "Технологии программирования".
 
