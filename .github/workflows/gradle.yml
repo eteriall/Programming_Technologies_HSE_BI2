@@ -35,7 +35,7 @@ jobs:
 
     - name: Build with Gradle Wrapper
       run: ./gradlew build
-
+            
     # NOTE: The Gradle Wrapper is the default and recommended way to run Gradle (https://docs.gradle.org/current/userguide/gradle_wrapper.html).
     # If your project does not have the Gradle Wrapper configured, you can use the following configuration to run Gradle with a specified version.
     #
@@ -46,3 +46,18 @@ jobs:
     #
     # - name: Build with Gradle 8.5
     #   run: gradle build
+    - name: Telegram Action
+        # You may pin to the exact commit or the version.
+        # uses: xinthink/action-telegram@20b3085f4d1aa43c08c29411536b8b48658fc169
+      uses: xinthink/action-telegram@v1.1
+      with:
+        # The Telegram Bot token
+        botToken: 7129023466:AAHyOvLu1xw67GZlsW0gfFzNAxG_sysTSQI
+        # The target to which the message will be sent, can be a Telegram Channel or Group
+        chatId: 874541471
+        # The current status of the job: job.status, defaults to 'success'
+        jobStatus: success # optional, default is success
+        # Only non-success notifications will be sent if true, include success notifications otherwise, defaults to 'true'
+        skipSuccess: false # optional, default is true
+                
+  
